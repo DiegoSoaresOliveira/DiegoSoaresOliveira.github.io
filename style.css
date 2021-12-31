@@ -1,0 +1,403 @@
+body {
+   margin: 0px;
+   font-family: "tw cen mt";
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+   margin: 0;
+   padding: 0;
+}
+
+img {
+   display: inline-block;
+   max-width: 100%;
+   border-radius: 0.45rem;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   padding: 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.header-menu {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+.header-menu a {
+   text-decoration: none;
+   color: #141414;
+   font-size: 1.125rem;
+   padding: 1rem;
+}
+
+.intro {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   max-width: 1200px;
+   margin: 0 auto;
+   justify-items: center;
+   gap: 0.5rem;
+   padding: 0.5rem;
+}
+
+.intro h1 {
+   font-size: 4.5rem;
+   position: relative;
+}
+
+.intro h1::before {
+   content: "";
+   background: url(img/detalhe.svg);
+   display: block;
+   width: 130px;
+   height: 100px;
+   position: absolute;
+   z-index: -1;
+   top: -20px;
+   left: -40px;
+}
+
+.intro p {
+   font-size: 1.25rem;
+}
+
+.experiencia {
+   padding: 2rem 4rem;
+   max-width: 1200px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   gap: 0.5rem;
+}
+
+.experiencia-titulo {
+   color: rgb(212, 212, 212);
+   text-transform: uppercase;
+   font-size: 10rem;
+   line-height: 14rem;
+   max-width: 100%;
+   word-break: break-all;
+}
+
+.experiencia-info {
+   padding-left: 8rem;
+}
+
+.experiencia-info p {
+   font-size: 1.125rem;
+   max-width: 60ch;
+}
+
+.experiencia-empresa {
+   background-color: rgb(231, 230, 229);
+   margin: 1.5rem;
+   padding: 1.5rem;
+   position: relative;
+}
+
+.experiencia-empresa span {
+   position: absolute;
+   left: -7rem;
+   width: 17%;
+   text-align: right;
+}
+
+.experiencia-empresa-dados {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem 2rem;
+   width: 100%;
+   position: relative;
+}
+
+.experiencia-empresa-dados::before {
+   content: "";
+   position: absolute;
+   background-color: #86e816;
+   display: inline-block;
+   height: 1.25rem;
+   width: 0.25rem;
+   left: -10px;
+}
+
+.experiencia-habilidades ul {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.experiencia-habilidades li {
+   background-color: white;
+   margin: 0.5rem;
+   padding: 0.5rem;
+   border-radius: 0.5rem;
+}
+
+.formacao {
+   background-color: rgb(44, 44, 44);
+}
+
+.formacao-container {
+   padding: 5rem 4rem;
+   max-width: 1200px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   gap: 0.5rem 3rem;
+   position: relative;
+}
+
+.formacao-titulo {
+   color: #000;
+   text-transform: uppercase;
+   font-size: 7.5rem;
+   line-height: 10rem;
+   max-width: 100%;
+   word-break: break-all;
+}
+
+.formacao-recente {
+   color: rgb(202, 202, 202);
+   margin-bottom: 1.5rem;
+   font-size: 1.25rem;
+}
+
+.formacao-universidades {
+   display: flex;
+   gap: 1rem;
+   margin-bottom: 1.5rem;
+}
+
+.universidade {
+   margin-left: 0.25rem;
+   background-color: #000;
+   padding: 0.75rem;
+   flex: 1;
+   border-radius: 0.25rem;
+}
+
+.formacao-titulo-curso {
+   color: #fff;
+   font-size: 1.125rem;
+   margin-top: 0.75rem;
+   margin-bottom: 1.25rem;
+   position: relative;
+}
+
+.formacao-titulo-curso::before {
+   content: "";
+   background-color: #86e816;
+   display: inline-block;
+   height: 1.25rem;
+   width: 0.25rem;
+   left: -15px;
+   position: absolute;
+}
+
+.tipo {
+   color: rgb(202, 202, 202);
+}
+
+.formacao-instituicao {
+   color: rgb(202, 202, 202);
+}
+
+.formacao-extra-curso {
+   display: flex;
+   justify-content: space-between;
+}
+
+.formacao-extra-intensivos h3 {
+   color: rgb(180, 180, 180);
+   padding-bottom: 0.5rem;
+}
+
+.formacao-curso {
+   color: #fff;
+   padding-bottom: 0.5rem;
+   font-weight: bold;
+}
+
+.formacao-extra-intensivos {
+   position: relative;
+}
+
+.formacao-extra-intensivos img {
+   display: inline-block;
+   position: absolute;
+   left: -1.75rem;
+   top: -0.125rem;
+}
+
+.formacao-curso-carga {
+   color: rgb(180, 180, 180);
+   padding-bottom: 0.5rem;
+}
+
+.formacao-extra-idiomas {
+   margin-top: 0.75rem;
+   position: relative;
+}
+
+.formacao-extra-idiomas img {
+   display: inline-block;
+   position: absolute;
+   left: -1.75rem;
+   top: -0.125rem;
+}
+
+.formacao-extra-idiomas h3 {
+   color: rgb(180, 180, 180);
+   padding-bottom: 0.5rem;
+}
+
+.footer {
+   background-color: #000;
+   color: #fff;
+}
+
+.footer-container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 4rem 0rem;
+   display: grid;
+   gap: 1rem;
+   justify-items: center;
+   grid-template-columns: 1fr 1fr;
+}
+
+.contato-info {
+   padding-left: 1rem;
+   color: rgb(180, 180, 180);
+   font-size: 1.125rem;
+}
+
+.direitos {
+   grid-column: 1/-1;
+   text-align: center;
+   color: rgb(180, 180, 180);
+   margin-top: 3rem;
+}
+
+.contatos {
+   font-size: 1.75rem;
+}
+
+.contato {
+   padding-top: 0.25rem;
+}
+
+@media (max-width: 900px) {
+   .header {
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 2rem;
+   }
+
+   .header-menu {
+      justify-content: center;
+   }
+
+   .header-menu a {
+      background-color: rgb(231, 230, 229);
+      border-radius: 0.4rem;
+   }
+
+   .intro {
+      padding: 1rem;
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .intro img {
+      max-width: 90%;
+   }
+
+   .intro h1 {
+      font-size: 2.75rem;
+   }
+
+   .intro h1::before {
+      width: 100%;
+      height: 15px;
+      content: "";
+      background-color: crimson;
+      background-image: none;
+      left: 0px;
+   }
+
+   .intro-dados {
+      align-self: center;
+   }
+
+   .experiencia {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+   }
+
+   .experiencia-titulo {
+      font-size: 4.5rem;
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+      line-height: normal;
+   }
+
+   .experiencia-info-p {
+      display: inline-block;
+      margin-left: 1.5rem;
+      padding-right: 1.5rem;
+      text-align: center;
+   }
+
+   .experiencia-empresa span {
+      position: absolute;
+      left: 1.5rem;
+      top: 0.25rem;
+   }
+
+   .experiencia-info {
+      padding-left: 0rem;
+   }
+
+   .experiencia-empresa span {
+      width: 20%;
+      text-align: left;
+   }
+
+   .formacao-container {
+      grid-template-columns: 1fr;
+      gap: 0 1rem;
+   }
+
+   .formacao-titulo {
+      text-align: center;
+      font-size: 4.5rem;
+   }
+
+   .formacao-recente {
+      text-align: center;
+   }
+
+   .formacao-universidades {
+      display: inline-block;
+      width: 100%;
+   }
+
+   .formacao-universidades li {
+      margin-bottom: 1rem;
+   }
+}
